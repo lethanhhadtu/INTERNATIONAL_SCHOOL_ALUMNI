@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>International School Alumni</title>
+    <title>Nghề Nghiệp</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link href='https://fonts.googleapis.com/css?family=Roboto&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
@@ -16,7 +16,7 @@
         <div class="container">
             <div>
                 <h1>
-                    <a href="#"><img src="/IMAGE/HEADER/logo1.jpg"></a>
+                    <a href="index.html"><img src="IMAGE/HEADER/logo1.jpg"></a>
                 </h1>
             </div>
             <div class="login-align">
@@ -37,10 +37,10 @@
         <div class="container">
             <ul>
                 <li><a href="">tin tức</a></li>
+                <li><a href="">sự kiện</a></li>
                 <li><a href="">nghề nghiệp</a></li>
                 <li><a href="">nhóm</a></li>
-                <li><a href="">cựu sinh viên</a></li>
-                <li><a href="">liên hệ</a></li>
+                <li><a href="CuuSinhVien.html">cựu sinh viên</a></li>
                 <li><a href="">thêm</a></li>
             </ul>
         </div>
@@ -80,6 +80,7 @@
 
                     </ul>
                 </div>
+
                 <div class="dang-tin">
                     <div class="banner">
                         <div>
@@ -88,7 +89,7 @@
                             </p>
                         </div>
                         <div class="button-dang-viec">
-                            <button class="dang-viec">
+                            <button class="dang-viec" onclick="document.getElementById('post-job').style.display='block'">
                                 <span class="material-icons">
                                     add
                                     </span>
@@ -96,115 +97,168 @@
                                     
                             </button>
                         </div>
+
                     </div>
-                    <div class="job">
-                        <div class="current-tab">
-                            <div class="job-tab">
+                    <div id="post-job">
+                        <div class="post-job-title">Đăng một công việc/thực tập</div>
+                        <form action="">
+                            <div class="two-cool">
+                                <div>
+                                    <div class="textfield">
+                                        <input type="radio" id="jobs" name="gender">
+
+                                        <label for="jobs">Job</label>
+                                        <input type="radio" id="internship" name="gender">
+                                        <label for="internship">Internship</label><br><br>
+                                    </div>
+                                    <div class="padding-top">
+                                        <div class="textfield">
+                                            <label for="company">Tên công ty</label> <br>
+                                            <input class="textfield__input" type="text" id="company" placeholder="Tên công ty"><br>
+                                        </div>
+                                        <div class="textfield ">
+                                            <label for="job-title">Vị trí tuyển dụng</label><br>
+                                            <input class="textfield__input" type="text" id="job-title" placeholder="Vị trí tuyển dụng"><br>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div>
+                                    <div class="textfield">
+                                        <label for="location">Địa điểm</label><br>
+                                        <input class="textfield__input" type="text" id="location" placeholder="Địa điểm "><br>
+                                    </div>
+                                    <div class="textfield ">
+                                        <label for="deadline">Hạn ứng tuyển</label><br>
+                                        <input class="textfield__input" type="text" id="deadline" placeholder="Hạn ứng tuyển"><br>
+                                    </div>
+                                    <div class="textfield ">
+                                        <label for="salary">Mức lương</label><br>
+                                        <input class="textfield__input" type="text" id="salary" placeholder="Mức lương "><br>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="textfield ">
+                                    <label for="description">Mô tả công việc</label><br>
+                                    <textarea class="textfield__input-area" name="description" id="description" rows="15" placeholder="Mô tả công việc"></textarea><br>
+
+                                </div>
+                            </div>
+                            <div class="submit-1">
+                                <button class="submit-2" type="next">SUBMIT</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div> </div><br>
+                    <div class="job ">
+                        <div class="current-tab ">
+                            <div class="job-tab ">
                                 <div class="name-job ">
-                                    <span class="font-medium">Trợ lý/Thư ký</span> |
+                                    <span class="font-medium ">Trợ lý/Thư ký</span> |
                                     <span>Công ty Cổ phần Tuấn 123 - Bất Động Sản Tuấn 123</span>
                                     <span>
                                         | 
-                                        <a href="">Apply</a>
+                                        <a href="jobview.html">Apply</a>
                                     </span>
                                 </div>
                                 <div>
-                                    <div class="chia3">
+                                    <div class="chia3 ">
                                         <div>
-                                            <div><span class="font-medium">Location </span></div>
-                                            <div><span class="">Tô Hiến Thành quận 10 TP.HCM</span></div>
+                                            <div><span class="font-medium ">Location </span></div>
+                                            <div><span class=" ">Tô Hiến Thành quận 10 TP.HCM</span></div>
                                         </div>
                                         <div>
-                                            <div><span class="font-medium">Deadline </span></div>
-                                            <div><span class="">Sep 30, 2020</span></div>
+                                            <div><span class="font-medium ">Deadline </span></div>
+                                            <div><span class=" ">Sep 30, 2020</span></div>
 
                                         </div>
                                         <div>
-                                            <div><span class="font-medium">Salary </span></div>
-                                            <div><span class="">Học việc 15.000.000/tháng. Du học sinh/Thạc sĩ/Tiến sĩ lương NGÀN ĐÔ</span></div>
+                                            <div><span class="font-medium ">Salary </span></div>
+                                            <div><span class=" ">Học việc 15.000.000/tháng. Du học sinh/Thạc sĩ/Tiến sĩ lương NGÀN ĐÔ</span></div>
                                         </div>
 
                                     </div>
                                     <div>
-                                        <div class="job-internship">Job</div>
+                                        <div class="job-internship ">Job</div>
 
                                     </div>
                                 </div>
-                                <div class="chia2-2">
+                                <div class="chia2-2 ">
                                     <div>
                                         <div class="infor">
                                             <div>
-                                                <a href=""><img class="comment-avatar" src="/IMAGE/IMG/thanhha.jpg"></a>
+                                                <a href=" "><img class="comment-avatar " src="IMAGE/IMG/thanhha.jpg "></a>
                                             </div>
 
                                             <div class="infor-font">
                                                 <div><span class="font-medium">Lê Thanh Hà </span></div>
-                                                <div><span class="">Published On Sep 01, 2020</span></div>
+                                                <div><span class=" ">Published On Sep 01, 2020</span></div>
                                             </div>
                                         </div>
                                     </div>
                                     <ul>
-                                        <li><a class="view" href="">VIEW</a></li>
+                                        <li><a class="view " href="jobview.html">VIEW</a></li>
 
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <div class="current-tab">
-                            <div class="job-tab">
+                        <div class="current-tab ">
+                            <div class="job-tab ">
                                 <div class="name-job ">
-                                    <span class="font-medium">Trợ lý/Thư ký</span> |
+                                    <span class="font-medium ">Trợ lý/Thư ký</span> |
                                     <span>Công ty Cổ phần Tuấn 123 - Bất Động Sản Tuấn 123</span>
                                     <span>
                                         | 
-                                        <a href="">Apply</a>
+                                        <a href="jobview.html ">Apply</a>
                                     </span>
                                 </div>
                                 <div>
-                                    <div class="chia3">
+                                    <div class="chia3 ">
                                         <div>
-                                            <div><span class="font-medium">Location </span></div>
-                                            <div><span class="">Tô Hiến Thành quận 10 TP.HCM</span></div>
+                                            <div><span class="font-medium ">Location </span></div>
+                                            <div><span class=" ">Tô Hiến Thành quận 10 TP.HCM</span></div>
                                         </div>
                                         <div>
-                                            <div><span class="font-medium">Deadline </span></div>
-                                            <div><span class="">Sep 30, 2020</span></div>
+                                            <div><span class="font-medium ">Deadline </span></div>
+                                            <div><span class=" ">Sep 30, 2020</span></div>
 
                                         </div>
                                         <div>
-                                            <div><span class="font-medium">Salary </span></div>
-                                            <div><span class="">Học việc 15.000.000/tháng. Du học sinh/Thạc sĩ/Tiến sĩ lương NGÀN ĐÔ</span></div>
+                                            <div><span class="font-medium ">Salary </span></div>
+                                            <div><span class=" ">Học việc 15.000.000/tháng. Du học sinh/Thạc sĩ/Tiến sĩ lương NGÀN ĐÔ</span></div>
                                         </div>
 
                                     </div>
                                     <div>
-                                        <div class="job-internship">Job</div>
+                                        <div class="job-internship ">Job</div>
                                     </div>
                                 </div>
-                                <div class="chia2-2">
+                                <div class="chia2-2 ">
                                     <div>
-                                        <div class="infor">
+                                        <div class="infor ">
                                             <div>
-                                                <a href=""><img class="comment-avatar" src="/IMAGE/IMG/thanhha.jpg"></a>
+                                                <a href=" "><img class="comment-avatar " src="IMAGE/IMG/thanhha.jpg "></a>
                                             </div>
 
-                                            <div class="infor-font">
-                                                <div><span class="font-medium">Lê Thanh Hà </span></div>
-                                                <div><span class="">Published On Sep 01, 2020</span></div>
+                                            <div class="infor-font ">
+                                                <div><span class="font-medium ">Lê Thanh Hà </span></div>
+                                                <div><span class=" ">Published On Sep 01, 2020</span></div>
                                             </div>
                                         </div>
                                     </div>
                                     <ul>
-                                        <li><a class="view" href="">VIEW</a></li>
+                                        <li><a class="view " href="jobview.html ">VIEW</a></li>
 
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <div class="current-tab">
-                            <div class="job-tab">
+                        <div class="current-tab ">
+                            <div class="job-tab ">
                                 <div class="name-job ">
-                                    <span class="font-medium">Trợ lý/Thư ký</span> |
+                                    <span class="font-medium ">Trợ lý/Thư ký</span> |
                                     <span>Công ty Cổ phần Tuấn 123 - Bất Động Sản Tuấn 123</span>
                                     <span>
                                         | 
@@ -212,155 +266,155 @@
                                     </span>
                                 </div>
                                 <div>
-                                    <div class="chia3">
+                                    <div class="chia3 ">
                                         <div>
-                                            <div><span class="font-medium">Location </span></div>
-                                            <div><span class="">Tô Hiến Thành quận 10 TP.HCM</span></div>
+                                            <div><span class="font-medium ">Location </span></div>
+                                            <div><span class=" ">Tô Hiến Thành quận 10 TP.HCM</span></div>
                                         </div>
                                         <div>
-                                            <div><span class="font-medium">Deadline </span></div>
-                                            <div><span class="">Sep 30, 2020</span></div>
+                                            <div><span class="font-medium ">Deadline </span></div>
+                                            <div><span class=" ">Sep 30, 2020</span></div>
 
                                         </div>
                                         <div>
-                                            <div><span class="font-medium">Salary </span></div>
-                                            <div><span class="">Học việc 15.000.000/tháng. Du học sinh/Thạc sĩ/Tiến sĩ lương NGÀN ĐÔ</span></div>
+                                            <div><span class="font-medium ">Salary </span></div>
+                                            <div><span class=" ">Học việc 15.000.000/tháng. Du học sinh/Thạc sĩ/Tiến sĩ lương NGÀN ĐÔ</span></div>
                                         </div>
 
                                     </div>
                                     <div>
-                                        <div class="job-internship">Internship</div>
-                                        <div class="job-internship-closed">Closed</div>
+                                        <div class="job-internship ">Internship</div>
+                                        <div class="job-internship-closed ">Closed</div>
                                     </div>
                                 </div>
-                                <div class="chia2-2">
+                                <div class="chia2-2 ">
                                     <div>
-                                        <div class="infor">
+                                        <div class="infor ">
                                             <div>
-                                                <a href=""><img class="comment-avatar" src="/IMAGE/IMG/thanhha.jpg"></a>
+                                                <a href=" "><img class="comment-avatar " src="IMAGE/IMG/thanhha.jpg "></a>
                                             </div>
 
-                                            <div class="infor-font">
-                                                <div><span class="font-medium">Lê Thanh Hà </span></div>
-                                                <div><span class="">Published On Sep 01, 2020</span></div>
+                                            <div class="infor-font ">
+                                                <div><span class="font-medium ">Lê Thanh Hà </span></div>
+                                                <div><span class=" ">Published On Sep 01, 2020</span></div>
                                             </div>
                                         </div>
                                     </div>
                                     <ul>
-                                        <li><a class="view" href="">VIEW</a></li>
+                                        <li><a class="view " href=" ">VIEW</a></li>
 
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <div class="current-tab">
-                            <div class="job-tab">
+                        <div class="current-tab ">
+                            <div class="job-tab ">
                                 <div class="name-job ">
-                                    <span class="font-medium">Trợ lý/Thư ký</span> |
+                                    <span class="font-medium ">Trợ lý/Thư ký</span> |
                                     <span>Công ty Cổ phần Tuấn 123 - Bất Động Sản Tuấn 123</span>
                                     <span>
                                         | 
-                                        <a href="">Apply</a>
+                                        <a href=" ">Apply</a>
                                     </span>
                                 </div>
                                 <div>
-                                    <div class="chia3">
+                                    <div class="chia3 ">
                                         <div>
-                                            <div><span class="font-medium">Location </span></div>
-                                            <div><span class="">Tô Hiến Thành quận 10 TP.HCM</span></div>
+                                            <div><span class="font-medium ">Location </span></div>
+                                            <div><span class=" ">Tô Hiến Thành quận 10 TP.HCM</span></div>
                                         </div>
                                         <div>
-                                            <div><span class="font-medium">Deadline </span></div>
-                                            <div><span class="">Sep 30, 2020</span></div>
+                                            <div><span class="font-medium ">Deadline </span></div>
+                                            <div><span class=" ">Sep 30, 2020</span></div>
 
                                         </div>
                                         <div>
-                                            <div><span class="font-medium">Salary </span></div>
-                                            <div><span class="">Học việc 15.000.000/tháng. Du học sinh/Thạc sĩ/Tiến sĩ lương NGÀN ĐÔ</span></div>
+                                            <div><span class="font-medium ">Salary </span></div>
+                                            <div><span class=" ">Học việc 15.000.000/tháng. Du học sinh/Thạc sĩ/Tiến sĩ lương NGÀN ĐÔ</span></div>
                                         </div>
 
                                     </div>
                                     <div>
-                                        <div class="job-internship">Job</div>
-                                        <div class="job-internship-closed">Closed</div>
+                                        <div class="job-internship ">Job</div>
+                                        <div class="job-internship-closed ">Closed</div>
                                     </div>
                                 </div>
-                                <div class="chia2-2">
+                                <div class="chia2-2 ">
                                     <div>
-                                        <div class="infor">
+                                        <div class="infor ">
                                             <div>
-                                                <a href=""><img class="comment-avatar" src="/IMAGE/IMG/thanhha.jpg"></a>
+                                                <a href=" "><img class="comment-avatar " src="IMAGE/IMG/thanhha.jpg "></a>
                                             </div>
 
-                                            <div class="infor-font">
-                                                <div><span class="font-medium">Lê Thanh Hà </span></div>
-                                                <div><span class="">Published On Sep 01, 2020</span></div>
+                                            <div class="infor-font ">
+                                                <div><span class="font-medium ">Lê Thanh Hà </span></div>
+                                                <div><span class=" ">Published On Sep 01, 2020</span></div>
                                             </div>
                                         </div>
                                     </div>
                                     <ul>
-                                        <li><a class="view" href="">VIEW</a></li>
+                                        <li><a class="view " href=" ">VIEW</a></li>
 
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <div class="current-tab">
-                            <div class="job-tab">
+                        <div class="current-tab ">
+                            <div class="job-tab ">
                                 <div class="name-job ">
-                                    <span class="font-medium">Trợ lý/Thư ký</span> |
+                                    <span class="font-medium ">Trợ lý/Thư ký</span> |
                                     <span>Công ty Cổ phần Tuấn 123 - Bất Động Sản Tuấn 123</span>
                                     <span>
                                         | 
-                                        <a href="">Apply</a>
+                                        <a href=" ">Apply</a>
                                     </span>
                                 </div>
                                 <div>
-                                    <div class="chia3">
+                                    <div class="chia3 ">
                                         <div>
-                                            <div><span class="font-medium">Location </span></div>
-                                            <div><span class="">Tô Hiến Thành quận 10 TP.HCM</span></div>
+                                            <div><span class="font-medium ">Location </span></div>
+                                            <div><span class=" ">Tô Hiến Thành quận 10 TP.HCM</span></div>
                                         </div>
                                         <div>
-                                            <div><span class="font-medium">Deadline </span></div>
-                                            <div><span class="">Sep 30, 2020</span></div>
+                                            <div><span class="font-medium ">Deadline </span></div>
+                                            <div><span class=" ">Sep 30, 2020</span></div>
 
                                         </div>
                                         <div>
-                                            <div><span class="font-medium">Salary </span></div>
-                                            <div><span class="">Học việc 15.000.000/tháng. Du học sinh/Thạc sĩ/Tiến sĩ lương NGÀN ĐÔ</span></div>
+                                            <div><span class="font-medium ">Salary </span></div>
+                                            <div><span class=" ">Học việc 15.000.000/tháng. Du học sinh/Thạc sĩ/Tiến sĩ lương NGÀN ĐÔ</span></div>
                                         </div>
 
                                     </div>
                                     <div>
-                                        <div class="job-internship">Internship</div>
-                                        <div class="job-internship-closed">Closed</div>
+                                        <div class="job-internship ">Internship</div>
+                                        <div class="job-internship-closed ">Closed</div>
                                     </div>
                                 </div>
-                                <div class="chia2-2">
+                                <div class="chia2-2 ">
                                     <div>
-                                        <div class="infor">
+                                        <div class="infor ">
                                             <div>
-                                                <a href=""><img class="comment-avatar" src="/IMAGE/IMG/thanhha.jpg"></a>
+                                                <a href=" "><img class="comment-avatar " src="IMAGE/IMG/thanhha.jpg "></a>
                                             </div>
 
-                                            <div class="infor-font">
-                                                <div><span class="font-medium">Lê Thanh Hà </span></div>
-                                                <div><span class="">Published On Sep 01, 2020</span></div>
+                                            <div class="infor-font ">
+                                                <div><span class="font-medium ">Lê Thanh Hà </span></div>
+                                                <div><span class=" ">Published On Sep 01, 2020</span></div>
                                             </div>
                                         </div>
                                     </div>
                                     <ul>
-                                        <li><a class="view" href="">VIEW</a></li>
+                                        <li><a class="view " href=" ">VIEW</a></li>
 
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <div class="current-tab">
-                            <div class="job-tab">
+                        <div class="current-tab ">
+                            <div class="job-tab ">
                                 <div class="name-job ">
-                                    <span class="font-medium">Trợ lý/Thư ký</span> |
+                                    <span class="font-medium ">Trợ lý/Thư ký</span> |
                                     <span>Công ty Cổ phần Tuấn 123 - Bất Động Sản Tuấn 123</span>
                                     <span>
                                         | 
@@ -368,51 +422,51 @@
                                     </span>
                                 </div>
                                 <div>
-                                    <div class="chia3">
+                                    <div class="chia3 ">
                                         <div>
-                                            <div><span class="font-medium">Location </span></div>
-                                            <div><span class="">Tô Hiến Thành quận 10 TP.HCM</span></div>
+                                            <div><span class="font-medium ">Location </span></div>
+                                            <div><span class=" ">Tô Hiến Thành quận 10 TP.HCM</span></div>
                                         </div>
                                         <div>
-                                            <div><span class="font-medium">Deadline </span></div>
-                                            <div><span class="">Sep 30, 2020</span></div>
+                                            <div><span class="font-medium ">Deadline </span></div>
+                                            <div><span class=" ">Sep 30, 2020</span></div>
 
                                         </div>
                                         <div>
-                                            <div><span class="font-medium">Salary </span></div>
-                                            <div><span class="">Học việc 15.000.000/tháng. Du học sinh/Thạc sĩ/Tiến sĩ lương NGÀN ĐÔ</span></div>
+                                            <div><span class="font-medium ">Salary </span></div>
+                                            <div><span class=" ">Học việc 15.000.000/tháng. Du học sinh/Thạc sĩ/Tiến sĩ lương NGÀN ĐÔ</span></div>
                                         </div>
 
                                     </div>
                                     <div>
-                                        <div class="job-internship">Job</div>
-                                        <div class="job-internship-closed">Closed</div>
+                                        <div class="job-internship ">Job</div>
+                                        <div class="job-internship-closed ">Closed</div>
                                     </div>
                                 </div>
-                                <div class="chia2-2">
+                                <div class="chia2-2 ">
                                     <div>
-                                        <div class="infor">
+                                        <div class="infor ">
                                             <div>
-                                                <a href=""><img class="comment-avatar" src="/IMAGE/IMG/thanhha.jpg"></a>
+                                                <a href=" "><img class="comment-avatar " src="IMAGE/IMG/thanhha.jpg "></a>
                                             </div>
 
-                                            <div class="infor-font">
-                                                <div><span class="font-medium">Lê Thanh Hà </span></div>
-                                                <div><span class="">Published On Sep 01, 2020</span></div>
+                                            <div class="infor-font ">
+                                                <div><span class="font-medium ">Lê Thanh Hà </span></div>
+                                                <div><span class=" ">Published On Sep 01, 2020</span></div>
                                             </div>
                                         </div>
                                     </div>
                                     <ul>
-                                        <li><a class="view" href="">VIEW</a></li>
+                                        <li><a class="view " href=" ">VIEW</a></li>
 
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <div class="current-tab">
-                            <div class="job-tab">
+                        <div class="current-tab ">
+                            <div class="job-tab ">
                                 <div class="name-job ">
-                                    <span class="font-medium">Trợ lý/Thư ký</span> |
+                                    <span class="font-medium ">Trợ lý/Thư ký</span> |
                                     <span>Công ty Cổ phần Tuấn 123 - Bất Động Sản Tuấn 123</span>
                                     <span>
                                         | 
@@ -420,42 +474,42 @@
                                     </span>
                                 </div>
                                 <div>
-                                    <div class="chia3">
+                                    <div class="chia3 ">
                                         <div>
-                                            <div><span class="font-medium">Location </span></div>
-                                            <div><span class="">Tô Hiến Thành quận 10 TP.HCM</span></div>
+                                            <div><span class="font-medium ">Location </span></div>
+                                            <div><span class=" ">Tô Hiến Thành quận 10 TP.HCM</span></div>
                                         </div>
                                         <div>
-                                            <div><span class="font-medium">Deadline </span></div>
-                                            <div><span class="">Sep 30, 2020</span></div>
+                                            <div><span class="font-medium ">Deadline </span></div>
+                                            <div><span class=" ">Sep 30, 2020</span></div>
 
                                         </div>
                                         <div>
-                                            <div><span class="font-medium">Salary </span></div>
-                                            <div><span class="">Học việc 15.000.000/tháng. Du học sinh/Thạc sĩ/Tiến sĩ lương NGÀN ĐÔ</span></div>
+                                            <div><span class="font-medium ">Salary </span></div>
+                                            <div><span class=" ">Học việc 15.000.000/tháng. Du học sinh/Thạc sĩ/Tiến sĩ lương NGÀN ĐÔ</span></div>
                                         </div>
 
                                     </div>
                                     <div>
-                                        <div class="job-internship">Job</div>
-                                        <div class="job-internship-closed">Closed</div>
+                                        <div class="job-internship ">Job</div>
+                                        <div class="job-internship-closed ">Closed</div>
                                     </div>
                                 </div>
-                                <div class="chia2-2">
+                                <div class="chia2-2 ">
                                     <div>
-                                        <div class="infor">
+                                        <div class="infor ">
                                             <div>
-                                                <a href=""><img class="comment-avatar" src="/IMAGE/IMG/thanhha.jpg"></a>
+                                                <a href=" "><img class="comment-avatar " src="IMAGE/IMG/thanhha.jpg "></a>
                                             </div>
 
-                                            <div class="infor-font">
-                                                <div><span class="font-medium">Lê Thanh Hà </span></div>
-                                                <div><span class="">Published On Sep 01, 2020</span></div>
+                                            <div class="infor-font ">
+                                                <div><span class="font-medium ">Lê Thanh Hà </span></div>
+                                                <div><span class=" ">Published On Sep 01, 2020</span></div>
                                             </div>
                                         </div>
                                     </div>
                                     <ul>
-                                        <li><a class="view" href="">VIEW</a></li>
+                                        <li><a class="view " href=" ">VIEW</a></li>
 
                                     </ul>
                                 </div>
@@ -472,12 +526,12 @@
 
         <footer>
 
-            <div class="container footer1">
+            <div class="container footer1 ">
                 <div>
                     <p>&copy; Copyright 2020 by CTC Team. All Rights Reserved.</p>
                 </div>
 
-                <div class="social">
+                <div class="social ">
                     <ul>
                         <li><a href="# ">Twitter</a></li>
                         <li><a href="# ">Facebook</a></li>

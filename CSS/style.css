@@ -102,7 +102,7 @@ header .container>div>ul>li>a:hover {
 
 #background {
     height: 660px;
-    background-image: url(/IMAGE//BENNER/banner.jpg);
+    background-image: url(../IMAGE/BENNER/banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -442,25 +442,25 @@ footer ul li a {
 }
 
 footer ul li:nth-child(1) a {
-    background-image: url(/IMAGE//SOCIAL/twit.png);
+    background-image: url(../IMAGE/SOCIAL/twit.png);
     width: 18px;
     background-size: 18px 18px;
 }
 
 footer ul li:nth-child(2) a {
-    background-image: url(/IMAGE//SOCIAL/Facebook.png);
+    background-image: url(../IMAGE/SOCIAL/Facebook.png);
     width: 10px;
     background-size: 10px 18px;
 }
 
 footer ul li:nth-child(3) a {
-    background-image: url(/IMAGE//SOCIAL/skype.png);
+    background-image: url(../IMAGE/SOCIAL/skype.png);
     width: 18px;
     background-size: 18px 18px;
 }
 
 footer ul li:nth-child(4) a {
-    background-image: url(/IMAGE//SOCIAL/Iinked.png);
+    background-image: url(../IMAGE/SOCIAL/Iinked.png);
     width: 15px;
     background-size: 15px 18px;
 }

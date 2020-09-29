@@ -103,19 +103,19 @@ header .container>div>ul>li>a:hover {
 
 /*career*/
 
-#career {
+#alumni {
     padding-top: 25px;
     background-color: rgb(245, 245, 245);
 }
 
-#career .chia2 {
+#alumni .chia2 {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
 }
 
-#career .danh-muc {
-    width: calc(33.33333333% - 16px);
+#alumni .danh-muc {
+    width: calc(25% - 16px);
     margin: 8px;
 }
 
@@ -172,222 +172,94 @@ header .container>div>ul>li>a:hover {
     color: rgb(117, 117, 117) !important;
 }
 
-#career .dang-tin {
-    width: calc(66.66666666% - 16px);
+#alumni .dang-tin {
+    width: calc(75% - 16px);
     margin: 8px;
 }
 
+.member {
+    margin-top: 20px;
+}
+
 .banner {
-    overflow: initial;
-    min-height: 122px;
-    background: url(../IMAGE//CAREER/bg2.jpg) center center / cover no-repeat;
-    padding-bottom: 20px;
-    background-color: rgb(224, 224, 224);
-    opacity: 0.8;
-    position: relative;
-    margin-bottom: 20px;
+    background-color: #C6353D;
+    padding: 20px;
+    color: white;
+    display: inline block;
 }
 
 .banner>div {
-    text-align: center;
+    text-align: left;
 }
 
-.button-dang-viec {
-    vertical-align: bottom;
-    padding-top: 27px;
-}
-
-.biding {
-    z-index: 1;
-    text-align: center;
-    font-size: 19px;
-    font-weight: 400;
-    padding-top: 15px;
-    color: white;
-}
-
-.dang-viec {
-    border-radius: 5px;
-    font-size: 15px;
-    line-height: 26px;
-    display: flex;
-    margin: 0px 237px;
-    text-transform: uppercase;
-}
-
-.dang-viec:hover {
-    cursor: pointer;
-}
-
-.two-cool {
+.member {
     display: flex;
     justify-content: space-between;
-}
-
-#post-job {
-    background-color: white;
-    display: none;
-}
-
-.post-job-title {
-    background-color: blue;
-    padding: 10px;
-    color: white;
-}
-
-form {
-    padding: 10px;
-}
-
-.submit-1 {
-    justify-content: right;
-    text-align: right;
-}
-
-.submit-2:hover {
-    cursor: pointer;
-}
-
-.submit-2 {
-    font-size: 15px;
-    line-height: 20px;
-    border: none;
-    padding: 5px;
-    background-color: blue;
-    color: white;
-    border-radius: 10px;
-}
-
-.two-cool>div {
-    width: calc((100% - 16px) /2);
-}
-
-.padding-top {
-    padding-top: 4px;
-}
-
-.textfield {
-    padding: 15px 0;
-    ;
-}
-
-.textfield__input {
-    border: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
-    margin: 0;
-    padding: 4px 0;
-    width: 100%;
-    background: none;
-    text-align: left;
-    color: inherit;
-}
-
-.textfield__input-area {
-    border: 1px solid rgba(0, 0, 0, 0.12);
-    margin: 0;
-    padding: 4px 0;
-    width: 100%;
-    background: none;
-    text-align: left;
-    color: inherit;
-}
-
-.material-icons {
-    font-size: 28px;
-}
-
-.current-tab {
-    background-color: white;
-}
-
-.job-tab {
-    margin-bottom: 20px;
-    padding: 20px;
-}
-
-.name-job {
-    font-size: 18px;
-    font-weight: 400;
-}
-
-.chia3 {
-    display: flex;
-    justify-content: space-between;
+    margin: 12px;
     flex-wrap: wrap;
-    text-align: left;
-    padding-top: 10px;
 }
 
-.chia3>div {
-    width: calc((100% - 0px) /3);
+.member>.chia4 {
+    width: calc((100% - 65px) / 4);
+    padding-top: 13px;
 }
 
-.job-internship {
-    padding: 3px 12px;
-    margin: 8px 0px 0px;
-    border-radius: 12px;
-    display: inline-block;
-    background-color: #E0E0E0 !important;
+.chia4>div {
+    border: 1px solid black;
 }
 
-.job-internship-closed {
-    padding: 3px 12px;
-    margin: 8px 0px 0px;
-    border-radius: 12px;
-    display: inline-block;
-    background-color: #ff8040 !important;
-}
-
-.font-medium {
-    font-weight: bold;
-}
-
-.chia2-2 {
-    padding-top: 15px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.chia2-2>div {
-    width: calc((100% - 0px) /2);
-}
-
-.chia2-2>ul>li>a {
-    height: 30px;
-    line-height: 28px;
-    padding: 0px 12px;
-    border-radius: 30px;
-    color: #0000a0;
-    text-transform: uppercase;
-    border: 2px solid transparent;
-    margin-left: 10px;
-    border-color: #0000a0;
-    display: inline-block;
-}
-
-.chia2-2>ul>li>a:hover {
-    background-color: #0000a0;
-    color: white;
-}
-
-.infor {
-    display: inline-block
-}
-
-.infor>div {
-    display: inline-block;
-    padding-right: 5px;
-}
-
-.infor-font {
-    font-size: 14px;
-}
-
-.comment-avatar {
-    height: 32px;
-    width: 32px;
-    border-radius: 50%;
+.avatar {
+    height: 185px;
+    width: 100%;
     object-fit: cover;
+    object-position: top;
+}
+
+.avatar:hover {
+    cursor: pointer;
+}
+
+.padding-left {
+    padding: 5px;
+}
+
+.padding-top1 {
+    margin-top: 5px;
+}
+
+.margin-bottom-2 {
+    margin-bottom: 2px !important;
+}
+
+.overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 20px;
+    font-size: 12px;
+}
+
+.font-color {
+    color: black;
+}
+
+.font-color:hover {
+    color: blue;
+}
+
+.add-network {
+    border-top: 1px solid black;
+    padding: 8px;
+    text-align: center;
+    font-size: 15px;
+    vertical-align: middle;
+    color: blue;
+}
+
+.add-network:hover {
+    background-color: #bcbcbc;
+    color: #16237e;
+    cursor: pointer;
 }
 
 footer {
@@ -424,25 +296,25 @@ footer ul li a {
 }
 
 footer ul li:nth-child(1) a {
-    background-image: url(../IMAGE/SOCIAL/twit.png);
+    background-image: url(/IMAGE/SOCIAL/twit.png);
     width: 18px;
     background-size: 18px 18px;
 }
 
 footer ul li:nth-child(2) a {
-    background-image: url(../IMAGE/SOCIAL/Facebook.png);
+    background-image: url(/IMAGE/SOCIAL/Facebook.png);
     width: 10px;
     background-size: 10px 18px;
 }
 
 footer ul li:nth-child(3) a {
-    background-image: url(../IMAGE/SOCIAL/skype.png);
+    background-image: url(/IMAGE/SOCIAL/skype.png);
     width: 18px;
     background-size: 18px 18px;
 }
 
 footer ul li:nth-child(4) a {
-    background-image: url(../IMAGE/SOCIAL/Iinked.png);
+    background-image: url(/IMAGE/SOCIAL/Iinked.png);
     width: 15px;
     background-size: 15px 18px;
 }
@@ -477,11 +349,15 @@ footer ul li:nth-child(4) a {
     footer .social {
         margin-bottom: 20px;
     }
-    #career .danh-muc {
+    #alumni .danh-muc {
         width: calc(100% - 16px);
     }
-    #career .dang-tin {
+    #alumni .dang-tin {
         width: calc(100% - 16px);
+    }
+    .member>.chia4 {
+        width: calc((100% - 33px) / 2);
+        padding-top: 13px;
     }
 }
 

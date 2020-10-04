@@ -119,6 +119,111 @@ header .container>div>ul>li>a:hover {
     margin: 8px;
 }
 
+.profile-information {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.overflow {
+    /* margin: 20px auto; */
+    /* border-radius: 100%; */
+    /* min-width: 100px;
+    min-height: 100px;
+    max-width: 170px;
+    max-height: 170px;
+    width: 130px;
+    position: relative;
+    overflow: hidden; */
+}
+
+.change {
+    /* opacity: 0.7;
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+    height: 24px;
+    bottom: 0px;
+    padding-top: 20px; */
+}
+
+.shadow {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.profile-info {
+    padding: 8px 0px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.contact {
+    display: block;
+    vertical-align: middle;
+    margin-bottom: 20px;
+}
+
+.expertise {
+    display: block;
+    vertical-align: middle;
+    margin-bottom: 20px;
+}
+
+.profile {
+    display: block;
+    vertical-align: middle;
+    margin-bottom: 20px;
+}
+
+.basic-information {
+    display: block;
+    vertical-align: middle;
+    margin-bottom: 20px;
+}
+
+.network {
+    display: block;
+    vertical-align: middle;
+    margin-bottom: 20px;
+}
+
+.summnary {
+    display: block;
+    vertical-align: middle;
+    margin-bottom: 20px;
+}
+
+.educational-level {
+    display: block;
+    vertical-align: middle;
+    margin-bottom: 20px;
+}
+
+.expertise-work {
+    display: block;
+    vertical-align: middle;
+    margin-bottom: 20px;
+}
+
+.contact-infor {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 12px 7%;
+}
+
+.new-icon {
+    margin-left: 0px !important;
+    margin-right: 12px;
+}
+
+.team-avatar {
+    height: 130px;
+    width: 130px;
+    object-fit: cover;
+    border-radius: 100%;
+    margin-top: 20px;
+}
+
 .danh-muc>ul>div>li {
     padding: 15px 24px;
 }

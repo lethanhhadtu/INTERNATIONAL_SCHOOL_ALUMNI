@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Edit Basic Information</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link href='https://fonts.googleapis.com/css?family=Roboto&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="form.css">
+        <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+<body>
+        <div class="container">
+            <div class="form">
+                <h3>Edit Basic Information</h3>
+                <form action="#">
+                    <label for="location">Vị Trí:</label>
+                    <input type="text" id="location" name="location" value="VD: Đà Nẵng">
+                    <label for="hometown">Quê Quán:</label>
+                    <input type="text" id="hometown" name="hometown" value="VD: Quảng Nam">
+                    <label for="gender">Giới Tính:</label>
+                    <select name="gender" id="gender">
+                        <option value="Male">Nam</option>
+                        <option value="Female">Nữ</option>
+                    </select>
+                    <label for="maritalstt">Tình Trạng Hôn Nhân:</label>
+                    <select name="maritalstt" id="maritalstt">
+                        <option value="Male">Đã Kết Hôn</option>
+                        <option value="Female">Độc Thân</option>
+                    </select>
+                    <label for="dob">Ngày Sinh:</label>
+                    <input type="date">
+                    <div class="button">
+                        <input type="submit" value="CANCEL" class="CANCEL">
+                        <input type="submit" value="SAVE" class="SAVE">
+                    </div>
+                </form>
+            </div>
+        </div>
+</body>
+</html>

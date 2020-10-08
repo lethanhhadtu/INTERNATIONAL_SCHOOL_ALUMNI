@@ -4,35 +4,21 @@
     <title>Setting</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href='https://fonts.googleapis.com/css?family=Roboto&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="./CSS/CuuSinhVien.css">
+    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--===============================================================================================-->
-    <link rel="icon" type="image/png" href="./Login/images/icons/logo.ico" />
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="css/util.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" href="./Login/css/AccountSetting.css">
+    <link rel="stylesheet" href="./CSS/AccountSetting.css">
 </head>
 <body>
     <header>
         <div class="container">
             <div>
-                <a href="index.html"><img src="./HEADER/logo1.jpg"></a>  
+                <a href="index.html"><img src="./IMAGE/HEADER/logo1.jpg"></a>  
             </div>
         </div>
         
@@ -86,7 +72,7 @@
                 <div>
                     <span>E-Mail</span>
                     <br>
-                    <input type="text" name="" id="" class="textbox1">
+                    <input type="text" name="" id="textbox1" class="textbox1" onclick="xoa">
                 </div>
             </td>
             <td>
@@ -104,14 +90,14 @@
                     <br>
                     <select name="" id="" class="select1">
                     </select>
-                    <input type="number" class="textbox">
+                    <input type="text" class="textbox">
                 </div>
             </td>
             <td>
                 <div>
                     <span>Thêm số điện thoại</span>
                     <br>
-                    <input type="number" name="" id="" class="textbox1">
+                    <input type="text" name="" id="" class="textbox1">
                 </div>
             </td>
         </tr>
@@ -200,5 +186,10 @@
     <footer>
         
     </footer>
+<script>
+    function xoa(){
+        document.getElementById("textbox1").style.border="hidden";
+    }
+</script>
 </body>
 </html>

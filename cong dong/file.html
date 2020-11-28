@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cộng đồng</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href='https://fonts.googleapis.com/css?family=Roboto&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
+    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <!-- 4 cái link này nha -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.0.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/congdong.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style-group.css">
+    <!-- 4 cái link này nha -->
+
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div>
+                <h1>
+                    <a href="index.html"><img src="/IMAGE/HEADER/logo1.jpg"></a>
+                </h1>
+            </div>
+            <div class="login-align">
+                <ul>
+                    <li class="login">
+                        <a href="/Login/login.html">log in</a>
+                    </li>
+                    <li class="regiatration">
+                        <a href="/Login/register.html">register</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </header>
+
+    <div id="menu">
+        <div class="container">
+            <ul>
+                <li><a href="">tin tức</a></li>
+                <li><a href="">sự kiện</a></li>
+                <li><a href="">nghề nghiệp</a></li>
+                <li><a href="">nhóm</a></li>
+                <li><a href="CuuSinhVien.html">cựu sinh viên</a></li>
+                <li><a href="">thêm</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- Từ đây nha -->
+    <div id="content-page" class="content-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="iq-card">
+                        <div class="iq-card-header d-flex justify-content-between">
+                            <div class="iq-header-title">
+                                <h4 class="card-title">Files</h4>
+                            </div>
+                            <div class="iq-card-header-toolbar d-flex align-items-center">
+                                <div class="dropdown">
+                                    <span class="dropdown-toggle text-primary" id="dropdownMenuButton5" data-toggle="dropdown">
+                             <i class="ri-more-2-fill"></i>
+                             </span>
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton5">
+                                        <a class="dropdown-item" href="#"><i class="ri-eye-fill mr-2"></i>View</a>
+                                        <a class="dropdown-item" href="#"><i class="ri-delete-bin-6-fill mr-2"></i>Delete</a>
+                                        <a class="dropdown-item" href="#"><i class="ri-pencil-fill mr-2"></i>Edit</a>
+                                        <a class="dropdown-item" href="#"><i class="ri-printer-fill mr-2"></i>Print</a>
+                                        <a class="dropdown-item" href="#"><i class="ri-file-download-fill mr-2"></i>Download</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="iq-card-body">
+                            <div class="table-responsive">
+                                <div class="row justify-content-between">
+                                    <div class="col-sm-12 col-md-6">
+                                        <div id="user_list_datatable_info" class="dataTables_filter">
+                                            <form class="mr-3 position-relative">
+                                                <div class="form-group mb-0">
+                                                    <input type="search" class="form-control" id="exampleInputSearch" placeholder="Search">
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6">
+                                        <div class="user-list-files d-flex float-right">
+                                            <a href="javascript:void();" class="chat-icon-phone btn iq-bg-primary">
+                                   Print
+                                   </a>
+                                            <a href="javascript:void();" class="chat-icon-video btn iq-bg-primary">
+                                   Excel
+                                   </a>
+                                            <a href="javascript:void();" class="chat-icon-delete btn iq-bg-primary">
+                                   Pdf
+                                   </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <table class="files-lists table table-striped mt-4">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">
+                                                <div class="checkbox text-center">
+                                                    <input type="checkbox" class="checkbox-input">
+                                                </div>
+                                            </th>
+                                            <th scope="col">File Name</th>
+                                            <th scope="col">File Type</th>
+                                            <th scope="col">Date</th>
+                                            <th scope="col">Size</th>
+                                            <th scope="col">Author</th>
+                                            <th scope="col">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox text-center">
+                                                    <input type="checkbox" class="checkbox-input">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <img class="rounded-circle img-fluid avatar-40 mr-2" src="images/page-img/43.png" alt="profile"> post report
+                                            </td>
+                                            <td>Document</td>
+                                            <td>
+                                                Mar 12, 2020
+                                            </td>
+                                            <td>390 kb</td>
+                                            <td>
+                                                Anna Sthesia
+                                            </td>
+                                            <td>
+                                                <div class="flex align-items-center list-user-action">
+                                                    <a data-toggle="tooltip" data-placement="top" title="" data-original-title="Tải xuống" href="#"><i class="ri-download-line"></i></a>
+                                                    <a data-toggle="tooltip" data-placement="top" title="" data-original-title="Xóa" href="#"><i class="ri-delete-bin-line"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox text-center">
+                                                    <input type="checkbox" class="checkbox-input">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <img class="rounded-circle img-fluid avatar-40 mr-2" src="images/page-img/44.png" alt="profile"> usages
+                                            </td>
+                                            <td>Document</td>
+                                            <td>
+                                                Mar 18, 2020
+                                            </td>
+                                            <td>600 kb</td>
+                                            <td>
+                                                Paul Molive
+                                            </td>
+                                            <td>
+                                                <div class="flex align-items-center list-user-action">
+                                                    <a data-toggle="tooltip" data-placement="top" title="" data-original-title="Tải xuống" href="#"><i class="ri-download-line"></i></a>
+                                                    <a data-toggle="tooltip" data-placement="top" title="" data-original-title="Xóa" href="#"><i class="ri-delete-bin-line"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox text-center">
+                                                    <input type="checkbox" class="checkbox-input">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <img class="rounded-circle img-fluid avatar-40 mr-2" src="images/page-img/45.png" alt="profile"> Images file
+                                            </td>
+                                            <td>Slide</td>
+                                            <td>
+                                                Mar 19, 2020
+                                            </td>
+                                            <td>800 kb</td>
+                                            <td>
+                                                Bob Frapples
+                                            </td>
+                                            <td>
+                                                <div class="flex align-items-center list-user-action">
+                                                    <a data-toggle="tooltip" data-placement="top" title="" data-original-title="Tải xuống" href="#"><i class="ri-download-line"></i></a>
+                                                    <a data-toggle="tooltip" data-placement="top" title="" data-original-title="Xóa" href="#"><i class="ri-delete-bin-line"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox text-center">
+                                                    <input type="checkbox" class="checkbox-input">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <img class="rounded-circle img-fluid avatar-40 mr-2" src="images/page-img/46.png" alt="profile"> total comments
+                                            </td>
+                                            <td>Document</td>
+                                            <td>
+                                                Mar 21, 2020
+                                            </td>
+                                            <td>500 kb</td>
+                                            <td>
+                                                Barb Ackue
+                                            </td>
+                                            <td>
+                                                <div class="flex align-items-center list-user-action">
+                                                    <a data-toggle="tooltip" data-placement="top" title="" data-original-title="Tải xuống" href="#"><i class="ri-download-line"></i></a>
+                                                    <a data-toggle="tooltip" data-placement="top" title="" data-original-title="Xóa" href="#"><i class="ri-delete-bin-line"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox text-center">
+                                                    <input type="checkbox" class="checkbox-input">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <img class="rounded-circle img-fluid avatar-40 mr-2" src="images/page-img/47.png" alt="profile"> popular events
+                                            </td>
+                                            <td>Pdf</td>
+                                            <td>
+                                                Mar 24, 2020
+                                            </td>
+                                            <td>320 kb</td>
+                                            <td>
+                                                Barb Ackue
+                                            </td>
+                                            <td>
+                                                <div class="flex align-items-center list-user-action">
+                                                    <a data-toggle="tooltip" data-placement="top" title="" data-original-title="Tải xuống" href="#"><i class="ri-download-line"></i></a>
+                                                    <a data-toggle="tooltip" data-placement="top" title="" data-original-title="Xóa" href="#"><i class="ri-delete-bin-line"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox text-center">
+                                                    <input type="checkbox" class="checkbox-input">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <img class="rounded-circle img-fluid avatar-40 mr-2" src="images/page-img/43.png" alt="profile"> todo list
+                                            </td>
+                                            <td>excel</td>
+                                            <td>
+                                                Mar 28, 2020
+                                            </td>
+                                            <td>600 kb</td>
+                                            <td>
+                                                Ira Membrit
+                                            </td>
+                                            <td>
+                                                <div class="flex align-items-center list-user-action">
+                                                    <a data-toggle="tooltip" data-placement="top" title="" data-original-title="Tải xuống" href="#"><i class="ri-download-line"></i></a>
+                                                    <a data-toggle="tooltip" data-placement="top" title="" data-original-title="Xóa" href="#"><i class="ri-delete-bin-line"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox text-center">
+                                                    <input type="checkbox" class="checkbox-input">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <img class="rounded-circle img-fluid avatar-40 mr-2" src="images/page-img/45.png" alt="profile"> music list
+                                            </td>
+                                            <td>pdf</td>
+                                            <td>
+                                                Mar 30, 2020
+                                            </td>
+                                            <td>900 kb</td>
+                                            <td>
+                                                Pete Sariya
+                                            </td>
+                                            <td>
+                                                <div class="flex align-items-center list-user-action">
+                                                    <a data-toggle="tooltip" data-placement="top" title="" data-original-title="Tải xuống" href="#"><i class="ri-download-line"></i></a>
+                                                    <a data-toggle="tooltip" data-placement="top" title="" data-original-title="Xóa" href="#"><i class="ri-delete-bin-line"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- đến đây nha, không cần thêm CSS với JS đâu, dùng chung với Community á, bỏ html là được -->
+
+
+
+
+
+    <footer>
+
+
+        <div class="container footer1 ">
+            <div>
+                <p>&copy; Copyright 2020 by CTC Team. All Rights Reserved.</p>
+            </div>
+
+            <div class="social ">
+                <ul>
+                    <li><a href="# ">Twitter</a></li>
+                    <li><a href="# ">Facebook</a></li>
+                    <li><a href="# ">Skype</a></li>
+                    <li><a href="# ">Linkedin</a></li>
+                </ul>
+            </div>
+
+
+        </div>
+    </footer>
+    <script src="js/jquery.min.js "></script>
+    <!-- Thêm 1 file js là propper.min.js vô đúng vị t rí thứ 2 nha. 5 cái kia bữa m có trong notify message rồi -->
+    <script src="js/popper.min.js "></script>
+    <script src="js/bootstrap.min.js "></script>
+    <script src="js/select2.min.js "></script>
+    <script src="js/jquery.magnific-popup.min.js "></script>
+    <script src="js/custom.js "></script>
+
+</body>
+
+
+</html>
